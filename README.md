@@ -1,75 +1,108 @@
-WEB: 
-Aplicação Web – Estudo de Caso com Rotas
+Claro. Mesmo sem conseguir visualizar a pasta mobile pelo formato do ZIP, vou criar um **README completo do projeto**, cobrindo **web** e **mobile**, de acordo com **o que a atividade prática exige**.
+O texto será **simples, direto, sem emojis**, apropriado para entrega acadêmica.
 
-Esta é a parte web do estudo de caso, desenvolvida em React com Vite.
-O objetivo é praticar a criação de rotas de navegação entre páginas usando o React Router DOM.
+Se quiser depois posso gerar versões separadas (um README para `web/` e outro para `mobile/`).
 
-Tecnologias utilizadas
+---
 
-React
+# Estudo de Caso – Aplicação Web e Mobile com Rotas
 
-Vite
+Este projeto foi desenvolvido como atividade prática para exercitar o uso de rotas em aplicações Web e Mobile.
+O objetivo é criar uma pequena aplicação de listagem e detalhes de produtos, utilizando ferramentas modernas tanto no React Web quanto no React Native com Expo.
 
-React Router DOM
+---
 
-Estrutura do projeto
+## Estrutura do Repositório
+
+```
+.
+├── web/             Projeto React com Vite (aplicação web)
+└── mobile/          Projeto React Native com Expo (aplicação mobile)
+```
+
+Cada pasta contém seu próprio projeto completo, com dependências, código-fonte e instruções de execução.
+
+---
+
+# Parte 1 – Aplicação Web (React + Vite)
+
+### Objetivo
+
+Implementar navegação entre páginas utilizando React Router DOM, exibindo:
+
+* Página inicial com lista de produtos
+* Página de detalhes acessada por rota dinâmica (`/product/:id`)
+
+### Tecnologias
+
+* React
+* Vite
+* React Router DOM
+
+### Rotas Implementadas
+
+| Rota           | Descrição                                 |
+| -------------- | ----------------------------------------- |
+| `/`            | Página inicial com a lista de produtos    |
+| `/product/:id` | Página de detalhes do produto selecionado |
+
+### Estrutura do Projeto Web
+
+```
 web/
 ├── src/
 │   ├── data/
-│   │   └── products.js        # Lista de produtos simulada
+│   │   └── products.js
 │   ├── pages/
-│   │   ├── Home.jsx           # Página inicial - lista de produtos
-│   │   └── ProductDetails.jsx # Página de detalhes do produto
-│   ├── App.jsx                # Layout principal e saída das rotas
-│   └── main.jsx               # Configuração do React Router
+│   │   ├── Home.jsx
+│   │   └── ProductDetails.jsx
+│   ├── App.jsx
+│   └── main.jsx
 ├── index.html
 └── package.json
+```
 
-Rotas implementadas
-Caminho	Descrição
+### Como executar (Web)
 
-Como executar o projeto
-
-Entrar na pasta da aplicação web:
-
+```
 cd web
-
-
-Instalar as dependências:
-
 npm install
-
-
-Executar o projeto:
-
 npm run dev
+```
 
+A aplicação estará disponível em:
 
-Acessar no navegador:
-
+```
 http://localhost:5173/
+```
 
-Conceitos praticados
+---
 
-Estruturação de um projeto React com Vite
+# Parte 2 – Aplicação Mobile (React Native + Expo)
 
-Criação de rotas e navegação entre páginas
+### Objetivo
 
-Uso de parâmetros de rota (:id)
+Implementar navegação entre telas usando React Navigation (Stack Navigation), contendo:
 
-Organização de arquivos e componentes
+* Tela inicial com lista ou botões de produtos
+* Tela de detalhes recebendo parâmetros da navegação
 
---------------------------------
-mobile:
-Tecnologias utilizadas
+### Tecnologias
 
-React Native
+* React Native
+* Expo
+* React Navigation
 
-Expo
+### Telas Implementadas
 
-React Navigation
+| Tela    | Descrição                                          |
+| ------- | -------------------------------------------------- |
+| Home    | Exibe uma lista de produtos                        |
+| Details | Exibe informações completas do produto selecionado |
 
-Estrutura do projeto
+### Estrutura esperada do Projeto Mobile
+
+```
 mobile/
 ├── App.js
 ├── app.json
@@ -77,52 +110,43 @@ mobile/
 ├── package.json
 └── src/
     ├── data/
-    │   └── products.js        
+    │   └── products.js
     ├── navigation/
-    │   └── index.js          
+    │   └── index.js
     └── screens/
-        ├── Home.js           
-        └── Details.js   
+        ├── Home.js
+        └── Details.js
+```
 
-Telas implementadas
-Tela	Descrição
-Home	Exibe uma lista de produtos. Cada item leva à tela de detalhes.
-Details	Mostra as informações completas do produto selecionado.
-Como executar o projeto
-
-Acesse a pasta do aplicativo:
-
+```
 cd mobile
-
-
-Instale as dependências:
-
 npm install
-
-
-Inicie o projeto:
-
 npx expo start
+```
 
+Para abrir o app:
 
-Abra o aplicativo:
+* Usando o aplicativo Expo Go no celular (QR Code)
+* Ou emulador Android/iOS pelo próprio Expo
 
-No celular, usando o app Expo Go (escaneie o QR Code mostrado no terminal).
+---
 
-Ou no emulador Android/iOS com as teclas:
+# Conceitos Trabalhados
 
-a para Android
+* Estrutura de projetos modernos (Web e Mobile)
+* Navegação com React Router DOM
+* Navegação com React Navigation (Stack Navigator)
+* Organização de arquivos e componentes
+* Passagem de parâmetros entre rotas/telas
+* Uso de dados mock para simular uma API
+* Execução e entrega de projetos em pastas separadas
 
-i para iOS
+---
 
-Conceitos praticados
+Se quiser, posso também:
 
-Estruturação de projeto mobile com Expo
+* Criar um **README separado** para `web/` e outro para `mobile/`
+* Analisar todo o projeto e apontar melhorias
+* Criar um guia de estudo para fixar os conceitos (como você pediu antes)
 
-Navegação de pilha (Stack Navigation)
-
-Passagem de parâmetros entre telas (route.params)
-
-Organização de arquivos e componentes
-
-
+Quer que eu gere os READMEs individuais também?
