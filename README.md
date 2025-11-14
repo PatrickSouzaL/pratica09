@@ -27,8 +27,7 @@ web/
 
 Rotas implementadas
 Caminho	Descrição
-/	Página inicial com a lista de produtos
-/product/:id	Página de detalhes do produto selecionado
+
 Como executar o projeto
 
 Entrar na pasta da aplicação web:
@@ -72,18 +71,18 @@ React Navigation
 
 Estrutura do projeto
 mobile/
-├── App.js                     # Ponto de entrada da aplicação
+├── App.js
+├── app.json
 ├── babel.config.js
 ├── package.json
-├── app.json
 └── src/
     ├── data/
-    │   └── products.js        # Lista de produtos simulada
+    │   └── products.js        
     ├── navigation/
-    │   └── index.js           # Configuração da navegação (stack)
+    │   └── index.js          
     └── screens/
-        ├── Home.js            # Tela inicial - lista de produtos
-        └── Details.js         # Tela de detalhes do produto
+        ├── Home.js           
+        └── Details.js   
 
 Telas implementadas
 Tela	Descrição
